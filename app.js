@@ -21,3 +21,17 @@ function percorreArray(arrayAmigos){
         lista.innerHTML += `<li>${nome}</li>`;
     }
 }
+
+function sortearAmigo(){
+    let nomeSorteado = Math.floor(Math.random() * amigos.length);
+    let resultado = document.getElementById('resultado');
+
+    if(amigos.length == 0){
+        alert('Por favor, insira um nome.');
+    } else if (amigos.length == 1){
+        alert('Por favor, insira pelo menos mais um nome.');
+    } else {
+        console.log(amigos[nomeSorteado]);
+        resultado.innerHTML = amigos[nomeSorteado];
+    }
+}
