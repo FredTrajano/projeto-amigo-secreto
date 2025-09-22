@@ -10,7 +10,7 @@ function adicionarAmigo(){
         document.getElementById('amigo').value = '';
         percorreArray(amigos);
     }
-    console.log(amigos);
+    //console.log(amigos);
 }
 
 function percorreArray(arrayAmigos){
@@ -31,7 +31,7 @@ function sortearAmigo(){
     } else if (amigos.length == 1){
         alert('Por favor, insira pelo menos mais um nome.');
     } else {
-        console.log(amigos[nomeSorteado]);
+        //console.log(amigos[nomeSorteado]);
         resultado.innerHTML = amigos[nomeSorteado];
     }
 }
